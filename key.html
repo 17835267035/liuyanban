@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9.25键盘事件</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		resize: none;
+		text-decoration: none;
+		list-style: none;
+	}
+	.pinlun{
+		width: 1001px;
+		height: 700px;
+		/* background: #bd7272; */
+		margin: 0 auto;
+		position: relative;
+	}
+	.pinlun img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.pinlun input{
+		width: 820px;
+		padding: 10px 5px;
+		box-sizing: border-box;
+		font-size: 16px;
+		color: #111;
+		border-radius: 5px;
+		position: absolute;
+		top: 132px;
+		left: 102px;
+	}
+	#wenben{
+		width: 820px;
+		height: 245px;
+		background: #fff;
+		border-radius: 10px;
+		position: absolute;
+		top: 175px;
+		left: 102px;
+		font-size: 20px;
+		color: #000;
+		margin-bottom: 20px;	
+	}
+	.write{
+		width: 820px;
+		min-height: 125px;
+		background: #b2e35a;
+		border-radius: 10px;
+		position: absolute;
+		top: 425px;
+		left: 102px;
+		margin-top: 30px;
+	}
+	h5{
+		position: absolute;
+		top: 427px;
+		left: 102px;
+		margin-left: 10px;
+		color: #fff;
+	}
+	h5 span{
+		color: red;
+	}
+	.submit{
+		width: 75px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		font-size: 16px;
+		color: #fff;
+		background: #64BFF7;
+		border: none;
+		font-weight: bold;
+		position: absolute;
+		bottom: 65px;
+		right: 3px;
+		border-radius: 5px;
+		outline: none;
+	}
+	.write .content{
+		width: 820px;
+		min-height:100px;
+		margin: 0 auto;
+		/* position: relative; */
+	}
+	.content li{
+		padding: 10px 10px;
+		/* background: black; */
+
+	}
+	.content img{
+		display: block;
+		width: 55px;
+		height: 55px;
+		position: absolute;
+
+	}
+	.content .middle{
+		padding: 5px 10px;
+		position: relative;
+		margin-left: 55px;
+	}
+	.content .middle h3{
+		font-size: 16px;
+		color: #000;
+		border-radius: 5px;
+		border: 1px solid #444;
+		background: #fff;
+	}
+	.content .middle p{
+		font-size: 16px;
+		color: #000;
+		border-radius: 5px;
+		border: 1px solid #444;
+		background: #fff;
+	}
+</style>
+<body>
+	<div class="pinlun">
+		<img src="img/timg.jpg" alt="">
+			<input type="text" placeholder="姓名">
+			<textarea  maxlength="120" name="" id="wenben" cols="30" rows="50" placeholder="请输入你的留言:"></textarea>
+			<h5>还能输入<span class="writes">120</span>个字</h5>
+			<div class="write">
+				<div class="content">
+					<li>
+						<img src="img/touxiang.png" alt="">
+						<div class="middle">
+							<h3>zhangzs</h3>
+							<p>这是你的留言</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/touxiang.png" alt="">
+						<div class="middle">
+							<h3>zhangzs</h3>
+							<p>这是你的留言</p>
+						</div>
+					</li>
+				</div>
+			</div>	
+			<button class="submit">提交</button>
+	</div>
+	
+	<script src="js/functions.js"></script>
+	<script src="js/key.js"></script>
+</body>
+</html>
